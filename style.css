@@ -1,0 +1,207 @@
+root {
+    --mavi: #0092E0;
+}
+/* Bootstrap */
+.btn-primary {
+    background-color: #0092E0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    display: block;
+    margin: auto;
+    padding: 5px 40px;
+    font-size: 25px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    position: relative;
+}
+
+.height-100 {
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    height: auto;
+    padding: 30px 50px;
+}
+
+/* MENU */
+nav {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 99999;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    background: #0092E0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.menu li {
+    position: relative;
+    transition: .3s all linear;
+}
+
+.menu li:hover {
+    border-radius: 6px;
+    background: #fff;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: var(--mavi);
+}
+
+.icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 5px 15px;
+}
+
+.menu li:hover .icon i {
+    color: #0092E0;
+}
+
+.menu li:hover i {
+    color: var(--mavi);
+}
+
+.title {
+    position: absolute;
+    min-width: 180px;
+    left: 95px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0092E0;
+    padding: 7px 10px;
+    border-radius: 4px;
+    color: #fff;
+    transition: .4s all ease-in-out;
+    font-weight: 600;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #0092E0;
+    transform: rotate(-45deg) translateY(-50%);
+    left: -2px;
+    top: 50%;
+    border-radius: 2px;
+}
+
+li:hover .title {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Form Alanı */
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search img {
+    margin: 0 auto;
+}
+
+/* Sonuçlar */
+.freq-results {
+    box-shadow: 1px 0 5px rgba(0, 0, 0, .3);
+    font-size: 16px;
+    padding: 10px;
+    height: 325px;
+    border-radius: 8px;
+    margin-left: 5px;
+    overflow-y: auto;
+}
+
+.words-count {
+    box-shadow: 1px 0 5px rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.freq-keywords {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skor {
+    box-shadow: 1px 0 5px rgba(0, 0, 0, .3);
+    padding: 20px;
+    line-height: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Derecelendirme */
+.derece  {
+    padding: 3px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 10px;
+    word-break: break-word;
+}
+
+.first {
+    background: #f3e66f;
+}
+
+.second {
+    background: #d2691e99;
+    margin-left: 50px;
+}
+
+.three {
+    background: #1e90ff63;
+    margin-left: 100px;
+}
+
+.text-c {
+    color: #fa4545;
+    padding-right: 10px;
+    font-weight: 800;
+}
